@@ -1,0 +1,2 @@
+module CakerequestsHelper
+end

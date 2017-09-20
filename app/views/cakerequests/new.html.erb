@@ -1,0 +1,25 @@
+<h1>Please complete your request</h1>
+<%= form_with scope: :cakerequest, local: true do |form| %>
+  <p>
+    <%= form.label :pastry_type %>
+    <%= form.select :pastry_type, ['Cake', 'Cupcakes', 'Tart', 'Something else']%>
+  </p>
+  <p>
+    <%= form.label :cake_details %>
+    <%= form.text_area :cake_details, placeholder: 'Pastry Details!' %>
+  </p>
+
+  <p>
+    <%= form.label :event_type %>
+    <%= form.select :event_type, ['Graduation', 'Birthday', 'Anniversery', 'I love cake!']%>
+  </p>
+
+  <p>
+    <%= form.label :event_date %>
+    <%= form.date_select :event_date  %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
