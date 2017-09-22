@@ -1,0 +1,2 @@
+class Cakerequest < ApplicationRecord
+end
