@@ -6,9 +6,7 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
-gem 'omniauth-github', github: 'intridea/omniauth-github'
-gem 'omniauth-openid', github: 'intridea/omniauth-openid'
+gem 'devise'
 gem 'omniauth-pinterest'
 gem 'pinterest-api'
 gem 'jquery-rails'
