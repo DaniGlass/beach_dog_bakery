@@ -6,12 +6,17 @@
 </div>
 
 <div id='review request'>
+  <h4>Please review your order request:</h4>
   <ul>
-  <%= @cakerequest.pastry_type %>
-  <%= @cakerequest.cake_details %>
-  <%= @cakerequest.event_type %>
-  <%= @cakerequest.event_date %>
-  <%= @cakerequest.pin_url %>
+  <p>Pastry Type: <%= @cakerequest.pastry_type %></p>
+  <p>Cake Details: <%= @cakerequest.cake_details %>
+  <p>Event Type: <%= @cakerequest.event_type %></p>
+  <p>Event Date: <%= @cakerequest.event_date %></p>
+  <!-- THIS DOESNT WORK!! -->
+  <p>'Pin-spiration': <a href="<%=@cakerequest.pin_url%>"
+   data-pin-do="embedPin"></a></p>
   </ul>
 </div>
 
+<p> Ooops! Not what you wanted? Edit your request! </p>
+<%= link_to 'Edit', edit_cakerequest_path %>

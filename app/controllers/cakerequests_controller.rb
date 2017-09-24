@@ -4,6 +4,10 @@ class CakerequestsController < ApplicationController
     @cakerequest = Cakerequest.new
   end
 
+  def edit
+    @cakerequest = Cakerequest.find(params[:id])
+  end
+
   def create
     @cakerequest = Cakerequest.new(cake_params)
     if @cakerequest.save
@@ -13,7 +17,18 @@ class CakerequestsController < ApplicationController
     end
   end
 
+  def update
+    @cakerequest = Cakerequest.find(params[:id])
+
+    if @cakerequest.update(cake_params)
+      redirect_to @cakerequest
+    else
+      render 'edit'
+    end
+  end
+
   def show
+    @cakerequest = Cakerequest.find(params[:id])
   end
 
 
