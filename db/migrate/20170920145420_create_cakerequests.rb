@@ -5,6 +5,7 @@ class CreateCakerequests < ActiveRecord::Migration[5.1]
       t.string  :cake_details
       t.string  :event_type
       t.date    :event_date
+      t.string  :pin_url
 
       t.timestamps
     end

@@ -1,0 +1,17 @@
+<h2>Thank you for requesting a special baked good from Beach Dog Bakery</h2>
+
+<div id='confirmation'>
+  <p> A confirmation email has been sent to <%= current_user.email %> and to our beautiful bakers on the beach. </p>
+  <p> You will recieve a response as to whether your request has been approved within 48 hours. </p>
+</div>
+
+<div id='review request'>
+  <ul>
+  <%= @cakerequest.pastry_type %>
+  <%= @cakerequest.cake_details %>
+  <%= @cakerequest.event_type %>
+  <%= @cakerequest.event_date %>
+  <%= @cakerequest.pin_url %>
+  </ul>
+</div>
+
