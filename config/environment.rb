@@ -3,6 +3,7 @@ require_relative 'application'
 
 require 'pinterest-api'
 require 'dotenv'
+require 'ngrok/tunnel'
 
 Dotenv.load
 
