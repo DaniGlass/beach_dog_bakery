@@ -64,6 +64,8 @@ The website uses a Postgres database
 
 * [Warden](https://github.com/hassox/warden/wiki)
 
+* [Pinterest API](https://github.com/realadeel/pinterest-api)
+
 ## Deployment
 
 * [Heroku](https://hawk-set.herokuapp.com/)
