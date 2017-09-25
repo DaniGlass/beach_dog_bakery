@@ -126,7 +126,7 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    omniauth-pinterest (2.0.1)
+    omniauth-pinterest (1.0.0)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.0)
     orm_adapter (0.5.0)
@@ -239,7 +239,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
-  omniauth-pinterest
+  omniauth-pinterest (< 2.0.0)
   pinterest-api
   puma (~> 3.7)
   rails (~> 5.1.4)

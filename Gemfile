@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'devise'
-gem 'omniauth-pinterest'
+gem 'omniauth-pinterest', '< 2.0.0'
 gem 'pinterest-api'
 gem 'jquery-rails'
 gem 'thin'
