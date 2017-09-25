@@ -1,15 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'dotenv-rails', require: 'dotenv/rails-now'
-
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
 gem 'devise'
 gem 'omniauth-pinterest'
 gem 'pinterest-api'
 gem 'jquery-rails'
+gem 'thin'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'

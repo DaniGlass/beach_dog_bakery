@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20170923003604) do
     t.string "cake_details"
     t.string "event_type"
     t.date "event_date"
+    t.string "pin_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

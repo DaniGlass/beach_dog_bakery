@@ -1,0 +1,22 @@
+<h2>Thank you for requesting a special baked good from Beach Dog Bakery</h2>
+
+<div id='confirmation'>
+  <p> A confirmation email has been sent to <%= current_user.email %> and to our beautiful bakers on the beach. </p>
+  <p> You will recieve a response as to whether your request has been approved within 48 hours. </p>
+</div>
+
+<div id='review request'>
+  <h4>Please review your order request:</h4>
+  <ul>
+  <p>Pastry Type: <%= @cakerequest.pastry_type %></p>
+  <p>Cake Details: <%= @cakerequest.cake_details %>
+  <p>Event Type: <%= @cakerequest.event_type %></p>
+  <p>Event Date: <%= @cakerequest.event_date %></p>
+  <!-- THIS DOESNT WORK!! -->
+  <p>'Pin-spiration': <a href="<%=@cakerequest.pin_url%>"
+   data-pin-do="embedPin"></a></p>
+  </ul>
+</div>
+
+<p> Ooops! Not what you wanted? Edit your request! </p>
+<%= link_to 'Edit', edit_cakerequest_path %>
