@@ -68,9 +68,7 @@ The website uses a Postgres database
 
 ## Deployment
 
-* [Heroku](https://hawk-set.herokuapp.com/)
-
-DO NOT HAVE ON HEROKU YET!!
+* [Heroku](https://beachdogbakery.herokuapp.com/)
 
 ## License
 
