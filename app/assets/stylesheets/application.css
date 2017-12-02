@@ -19,10 +19,40 @@
 html {
   box-sizing: border-box;
 }
-header {
+.app_header{
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
+  max-height: 200px;
   width: 100%;
-  background: #eee;
   padding: 20px;
+  justify-content: flex-start;
 }
+.logo{
+width: 12%;
+height: 12%;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+  padding: 20px;
+  align-items: center;
+}
+.nav_item{
+flex: 1;
+padding: 10px;
+flex-grow: 1;
+flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
