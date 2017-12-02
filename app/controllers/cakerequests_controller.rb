@@ -36,7 +36,6 @@ class CakerequestsController < ApplicationController
   private
   def cake_params
     params.require(:cakerequest).permit(:pastry_type, :cake_details, :event_type, :event_date, :pin_url)
-
   end
 end
 

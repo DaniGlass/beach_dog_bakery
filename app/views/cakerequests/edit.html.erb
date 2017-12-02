@@ -1,11 +1,12 @@
 <h1>Edit Your Cake Request</h1>
-  <% form_with (model: @cakerequest) do |form| %>
-<!-- something about this isnt working -->
-    <% if @cakerequest.errors.any? %>
+
+<%= form_with scope: :cakerequest, url: cakerequests_path, local: true do |form| %>
+
+  <% if @cakerequest.errors.any? %>
     <div id="error_explanation">
       <h2>
         <%= pluralize(@cakerequest.errors.count, "error") %> prohibited
-        this request from being completed:
+        this cakerequest from being saved:
       </h2>
       <ul>
         <% @cakerequest.errors.full_messages.each do |msg| %>
@@ -15,8 +16,7 @@
     </div>
   <% end %>
 
-
-    <p>
+     <p>
       <%= form.label :pastry_type %>
       <%= form.select :pastry_type, ['Cake', 'Cupcakes', 'Tart', 'Something else']%>
     </p>
@@ -29,20 +29,18 @@
       <%= form.label :event_type %>
       <%= form.select :event_type, ['Graduation', 'Birthday', 'Anniversery', 'I love cake!']%>
     </p>
-
     <p>
       <%= form.label :event_date %>
       <%= form.date_select :event_date  %>
     </p>
-
     <p>
       <%= form.label :Pinspiration_url %>
       <%= form.text_area :pin_url, placeholder: 'Drop us some Pin-spiration!'  %>
     </p>
-
     <p>
-      <%= form.submit%>
+      <%= form.submit %>
     </p>
+
 <% end %>
 
-<%= link_to 'Back', cakerequests_path %>
+<%= link_to 'Back', cakerequest_path %>
