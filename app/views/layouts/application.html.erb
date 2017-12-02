@@ -12,16 +12,17 @@
     src="//assets.pinterest.com/js/pinit.js"
 ></script>
   <body>
-    <ul class="nav">
-      <% if user_signed_in? %>
-        <%= link_to "Logout", destroy_user_session_path, {method: :delete} %>
-        <%= link_to "Request a Pastry!", new_cakerequest_path %>
-      <% else %>
-        <%= link_to "Register", new_user_registration_path %>
-        <%= link_to "Login", user_session_path %>
-      <% end %>
-      <%= link_to "Home", root_path %>
-
+    <header>
+      <ul class="nav">
+        <% if user_signed_in? %>
+          <div class= nav_item > <%= link_to "Logout", destroy_user_session_path, {method: :delete} %> </li>
+          <div class= nav_item > <%= link_to "Make a Request!", new_cakerequest_path %> </div>
+        <% else %>
+          <div class= nav_item > <%= link_to "Register", new_user_registration_path %> </div>
+          <div class= nav_item > <%= link_to "Login", user_session_path %> </div>
+        <% end %>
+          <div class= nav_item > <%= link_to "Home", root_path %> </div>
+    </header>
     <%= yield %>
   </body>
 </html>
