@@ -27,17 +27,17 @@ html {
   max-height: 200px;
   width: 100%;
   padding: 20px;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .logo{
-width: 12%;
-height: 12%;
+width: 125px;
+height: 125px;
 }
 .nav{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   flex-grow: 1;
   padding: 20px;
   align-items: center;
@@ -45,14 +45,35 @@ height: 12%;
 }
 .nav_item{
   display: flex;
-  padding: 20px;
+  flex-grow: 1;
+  height: 100%;
   background: #FC4F1E;
   opacity:0.8;
   font-weight: bold;
   color: #0B31EF;
+  align-items: center;
+  justify-content: space-around;
 }
-
-
+/*this is the h1 on each page*/
+.page_header{
+  display: flex;
+  flex-grow: 1;
+  font-weight: bold;
+  justify-content: center;
+  background: white;
+  opacity: 0.6;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h2{
+  display: flex;
+  padding: 20px;
+  flex-grow: 1;
+  font-weight: bold;
+  justify-content: center;
+  background: white;
+  opacity: 0.4;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 
 
 
