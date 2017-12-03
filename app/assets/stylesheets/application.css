@@ -71,10 +71,24 @@ h2{
   font-weight: bold;
   justify-content: center;
   background: white;
-  opacity: 0.4;
+  opacity: 0.6;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-
+.session_form{
+  display: flex;
+  justify-content: center;
+}
+.form{
+  background: white;
+  opacity: 0.8;
+  padding: 20px;
+}
+.field{
+  padding: 10px;
+}
+.actions{
+  padding: 10px;
+}
 
 
 

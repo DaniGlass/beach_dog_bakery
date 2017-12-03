@@ -5,14 +5,15 @@
 </head>
   <body class="request_page">
 
-  <h1> Thank you for requesting a special baked good from Beach Dog Bakery </h1>
+  <h2> Thank you for requesting a special baked good from Beach Dog Bakery! </h2>
 
-  <div id='confirmation_edit'>
-    <p> A confirmation email has been sent to <%= current_user.email %> and to our beautiful bakers on the beach. </p>
-    <p> You will recieve a response as to whether your request has been approved within 48 hours. </p>
+  <div class='background_box'>
+    <p> A confirmation email has been sent to <%= current_user.email %> and to our beautiful baker on the beach.
+      <br>
+    You will receive a response as to whether your request has been approved within 48 hours. </p>
   </div>
-
-  <div id='review request'>
+  <br>
+  <div class='background_box'>
     <h4>Please review your order request:</h4>
     <ul>
       <p>Pastry Type: <%= @cakerequest.pastry_type %></p>
@@ -24,9 +25,15 @@
      data-pin-do="embedPin"></a></p>
     </ul>
   </div>
+  <br>
+  <div class="background_box">
+    <p> Ooops! Not what you wanted?
+      <br>
+      Edit your request!
+      <br>
+      <%= link_to 'Edit', edit_cakerequest_path %>
+    </p>
 
-  <p> Ooops! Not what you wanted? Edit your request! </p>
-  <%= link_to 'Edit', edit_cakerequest_path %>
-
+  </div>
   </body>
 </html>

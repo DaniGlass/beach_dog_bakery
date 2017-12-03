@@ -8,3 +8,16 @@
     background-attachment: fixed;
     background-position: left top;
 }
+.background_box{
+  display: flex;
+  justify-content: center;
+  background: white;
+  opacity: 0.8;
+  padding: 20px;
+  align-items: center;
+}
+p{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
