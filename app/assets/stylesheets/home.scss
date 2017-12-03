@@ -27,3 +27,20 @@ div.container {
   text-align: center;
   padding: 4%;
 }
+.about{
+  display: flex;
+  justify-content: center;
+}
+.baker_pict{
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+}
+.bio{
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  background: #FC4F1E;
+  opacity: 0.8;
+  padding: 20px;
+}
