@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  padding: 2%;
+}
+.app_header{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  max-height: 200px;
+  width: 100%;
+  padding: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.logo{
+width: 12%;
+height: 12%;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav_item{
+  display: flex;
+  padding: 20px;
+  background: #FC4F1E;
+  opacity:0.8;
+  font-weight: bold;
+  color: #0B31EF;
+}
+
+
+
+
+
+
+
+
+
+
