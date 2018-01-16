@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20170923003604) do
     t.string "event_type"
     t.date "event_date"
     t.string "pin_url"
+    t.integer "phone_number", limit: 10
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

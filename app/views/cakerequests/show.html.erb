@@ -5,6 +5,18 @@
 </head>
   <body class="request_page">
 
+    <% require 'twilio-ruby'
+      account_sid = ENV['ACCOUNT_SID']
+      auth_token = ENV['AUTH_TOKEN']
+      @client = Twilio::REST::Client.new(account_sid, auth_token)
+      message = @client.messages.create(
+        body: "Thank you for requesting #{@cakerequest.pastry_type} from The Beach Dog Bakery. We will be in touch soon if your request has been accepted by our bakers. Please do not reply to this message.",
+        to: "#{@cakerequest.phone_number}",
+        from: '+14086093973'
+      )
+      puts @message.subresource_uris
+    %>
+
   <h2> Thank you for requesting a special baked good from Beach Dog Bakery! </h2>
 
   <div class='background_box'>
@@ -20,9 +32,9 @@
       <p>Cake Details: <%= @cakerequest.cake_details %>
       <p>Event Type: <%= @cakerequest.event_type %></p>
       <p>Event Date: <%= @cakerequest.event_date %></p>
-      <!-- THIS DOESNT WORK!! -->
       <p>'Pin-spiration': <a href="<%=@cakerequest.pin_url%>"
      data-pin-do="embedPin"></a></p>
+      <p>Phone: <%= @cakerequest.phone_number %> </p>
     </ul>
   </div>
   <br>

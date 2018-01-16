@@ -43,6 +43,14 @@
           <%= form.text_area :pin_url, placeholder: 'Drop us some Pin-spiration!'  %>
         </p>
         <p>
+          <%= form.label :phone_number %>
+          <%= form.text_field :phone_number, placeholder: "Text Confirmation"  %>
+          <details><ul>
+            <li>Phone number must be within the continental United States.</li>
+            <li>Standard text messaging rates may apply.</li>
+          </ul></details>
+        </p>
+        <p>
           <%= form.submit%>
         </p>
       <% end %>
