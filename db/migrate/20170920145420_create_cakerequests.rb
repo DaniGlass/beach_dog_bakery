@@ -6,6 +6,7 @@ class CreateCakerequests < ActiveRecord::Migration[5.1]
       t.string  :event_type
       t.date    :event_date
       t.string  :pin_url
+      t.integer :phone_number, limit: 10
 
       t.timestamps
     end
