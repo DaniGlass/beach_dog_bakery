@@ -9,12 +9,12 @@
       account_sid = ENV['ACCOUNT_SID']
       auth_token = ENV['AUTH_TOKEN']
       @client = Twilio::REST::Client.new(account_sid, auth_token)
-      message = @client.messages.create(
+      @message = @client.messages.create(
         body: "Thank you for requesting #{@cakerequest.pastry_type} from The Beach Dog Bakery. We will be in touch soon if your request has been accepted by our bakers. Please do not reply to this message.",
         to: "#{@cakerequest.phone_number}",
         from: '+14086093973'
       )
-      puts @message.status
+      @message.sid
     %>
 
   <h2> Thank you for requesting a special baked good from Beach Dog Bakery! </h2>
@@ -34,7 +34,6 @@
       <p>Event Date: <%= @cakerequest.event_date %></p>
       <p>'Pin-spiration': <a href="<%=@cakerequest.pin_url%>"
      data-pin-do="embedPin"></a></p>
-      <p>Phone: <%= @cakerequest.phone_number %> </p>
     </ul>
   </div>
   <br>
